@@ -44,8 +44,8 @@ class TestInserts(unittest.TestCase):
     print temperaturapanel
     print json
   
-    #JSON Message to insert into Sofia2
-    ONTOLOGY_INSERT_SQLLIKE = "INSERT INTO PanelSolar021UPV(voltajeSTC, voltajeNOCT, intensidadSTC, intensidadNOCT, temperaturapanel, realtime) values (" + str(voltajeSTC) + "," + str(voltajeNOCT) + "," + str(intensidadSTC) + "," + str(intensidadNOCT) + "," + str(temperaturapanel) + "," + " \"{ '$date': '" + json + "'}\")"
+    #JSON Message to insert into Sofia2 with the five properties of the ontology (timestamp too!!)
+    ONTOLOGY_INSERT_SQLLIKE = "INSERT INTO PanelSolar021UPV(voltajeSTC, voltajeNOCT, intensidadSTC, intensidadNOCT, temperaturapanel, timeadd) values (" + str(voltajeSTC) + "," + str(voltajeNOCT) + "," + str(intensidadSTC) + "," + str(intensidadNOCT) + "," + str(temperaturapanel) + "," + " \"{ '$date': '" + json + "'}\")"
     print ONTOLOGY_INSERT_SQLLIKE
 
     def setUp(self):
