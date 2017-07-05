@@ -32,11 +32,11 @@ except ImportError:
 	import ibmiotf.application
 	import ibmiotf.device
 
-organization = "cg6c6c"
-deviceType = "panelsolarupv"
-deviceId = "panelsolarupv002"
+organization = "************"       #Your organization ID
+deviceType = "**************"       #Your device type
+deviceId = "***************"        #Your device ID
 authMethod = "token"
-authToken = "2&*************L)"        #Your Token device
+authToken = "*************)"        #Your Token device
 
 voltajeSTC1 = random.uniform(30,35)
 voltajeSTC = round(voltajeSTC1,2)
