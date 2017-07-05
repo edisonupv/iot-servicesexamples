@@ -38,6 +38,7 @@ deviceId = "***************"        #Your device ID
 authMethod = "token"
 authToken = "*************)"        #Your Token device
 
+#random data of sensors
 voltajeSTC1 = random.uniform(30,35)
 voltajeSTC = round(voltajeSTC1,2)
 voltajeNOCT1 = random.uniform(27,32)
@@ -59,7 +60,10 @@ except Exception as e:
 
 # Connect and send a datapoint into the cloud as an event of type "status"
 deviceCli.connect()
+
+#myData is the message JSON with the data sensors 
 myData = {'voltajeSTC': voltajeSTC, 'voltajeNOCT': voltajeNOCT, 'intensidadSTC': intensidadSTC, 'intensidadNOCT': intensidadNOCT, 'temperaturapanel': temperaturapanel}
+
 def myOnPublishCallback():
 	print("Confirmed event %s received by IoTF\n")
 success = deviceCli.publishEvent("status", "json", myData, qos=0, on_publish=myOnPublishCallback)
