@@ -36,7 +36,7 @@ organization = "cg6c6c"
 deviceType = "panelsolarupv"
 deviceId = "panelsolarupv002"
 authMethod = "token"
-authToken = "2&2hys+wyVFrwb31L)"
+authToken = "2&*************L)"        #Your Token device
 
 voltajeSTC1 = random.uniform(30,35)
 voltajeSTC = round(voltajeSTC1,2)
