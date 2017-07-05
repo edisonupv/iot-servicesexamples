@@ -17,9 +17,10 @@ from ssap.tests.utils.callbacks import TestCallback
 
 class TestInserts(unittest.TestCase):
     
-    ONTOLOGY = "PanelSolar021UPV"                 #Name of ontology that you were created before
+    ONTOLOGY = "*****************"                #Name of ontology that you were created before
     TOKEN = "*********************************"   #Token of ontology
-    INSTANCE = "PanelSolar021UPVKP:Instancia01"   #Instance that you created for the KP that will consume the information 
+    INSTANCE = "********************"             #Instance that you created for the KP that will consume the information 
+                                                  #Example INSTANCE = "PanelSolar021UPVKP:Instancia01"
 
     voltajeSTC1 = random.uniform(30,35)           #Random data to send to Sofia2
     voltajeSTC = round(voltajeSTC1,2)
