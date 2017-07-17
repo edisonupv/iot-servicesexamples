@@ -27,11 +27,11 @@ static const char* deviceInfo = "{ \"ObjectType\": \"DeviceInfo\","
 static const char* telemetryData = "{"
 "\"DeviceID\": \"%s\","
 
-"\"voltajeSTC14\" : %.2f,"
-"\"voltajeNOCT14\" : %.2f,"
-"\"intensidadSTC14\" : %.2f,"
-"\"intensidadNOCT14\" : %.2f,"
-"\"temppanel14\" : %.2f } ";
+"\"voltajeSTC01\" : %.2f,"
+"\"voltajeNOCT01\" : %.2f,"
+"\"intensidadSTC01\" : %.2f,"
+"\"intensidadNOCT01\" : %.2f,"
+"\"temppanel01\" : %.2f } ";
 
 static IOTHUB_CLIENT_HANDLE g_iotHubClientHandle = NULL;
 
